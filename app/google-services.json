@@ -1,0 +1,217 @@
+{
+  "project_info": {
+    "project_number": "438311251920",
+    "firebase_url": "https://pushnotificationforsmartalarm.firebaseio.com",
+    "project_id": "pushnotificationforsmartalarm",
+    "storage_bucket": "pushnotificationforsmartalarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438311251920:android:a2fd3f8568867016",
+        "android_client_info": {
+          "package_name": "com.datasoft_iot.tausif.pushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438311251920-8ulrj9uueg3rrvlfqj2eg9cqp77j61p5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.datasoft_iot.tausif.pushnotification",
+            "certificate_hash": "fdaf29a80288334fdc9e9ca6f5cb56117dcfcdeb"
+          }
+        },
+        {
+          "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgN8lyUWKjwCS41oXthLbhKoOp8FY9Kbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438311251920:android:08f0fec861685c32",
+        "android_client_info": {
+          "package_name": "com.datasoft_iot.tausif.sharedhomev1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgN8lyUWKjwCS41oXthLbhKoOp8FY9Kbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438311251920:android:36df49e5a7091e3e",
+        "android_client_info": {
+          "package_name": "com.datasoft_iot.tausif.smartalarmadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438311251920-4el5106p5ooa7eeadcq9131b2gokaj3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.datasoft_iot.tausif.smartalarmadmin",
+            "certificate_hash": "fdaf29a80288334fdc9e9ca6f5cb56117dcfcdeb"
+          }
+        },
+        {
+          "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgN8lyUWKjwCS41oXthLbhKoOp8FY9Kbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438311251920:android:385f7f368aab7b16",
+        "android_client_info": {
+          "package_name": "com.datasoft_iot.tausif.smartalarmv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438311251920-0cc8fuiefmn7926o2kq8k691up3aj9h3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.datasoft_iot.tausif.smartalarmv2",
+            "certificate_hash": "fdaf29a80288334fdc9e9ca6f5cb56117dcfcdeb"
+          }
+        },
+        {
+          "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgN8lyUWKjwCS41oXthLbhKoOp8FY9Kbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438311251920:android:3c89b35709cbc14f",
+        "android_client_info": {
+          "package_name": "com.datasoft_iot.tausif.smartalarmv2japan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgN8lyUWKjwCS41oXthLbhKoOp8FY9Kbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438311251920:android:c0a58af08b0cadf7",
+        "android_client_info": {
+          "package_name": "com.datasoft_iot.tausif.smsgatewaytoserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438311251920-7kvvpe9as4cl2s6hoktkk1a1h4t029em.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.datasoft_iot.tausif.smsgatewaytoserver",
+            "certificate_hash": "fdaf29a80288334fdc9e9ca6f5cb56117dcfcdeb"
+          }
+        },
+        {
+          "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgN8lyUWKjwCS41oXthLbhKoOp8FY9Kbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438311251920-i8i2uj6dmdoiest8bq39tk4upjeoup36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

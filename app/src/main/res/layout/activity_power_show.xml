@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout_Power">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_four" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/main_activity_toolbar"
+            android:id="@+id/powerShowToolbar"/>
+
+
+        <LinearLayout
+            android:id="@+id/circleViewLayout"
+            android:paddingTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.github.pavlospt.CircleView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_power"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                app:cv_backgroundColorValue="@color/white"
+                app:cv_fillColor="@color/lightBlue"
+                app:cv_fillRadius=".9"
+                app:cv_strokeColorValue="@color/lightBlue"
+                app:cv_strokeWidthSize="10"
+                app:cv_subtitleColor="@color/darkBlue"
+                app:cv_subtitleSize="8dp"
+                app:cv_subtitleText=""
+                app:cv_titleColor="@color/darkBlue"
+                app:cv_titleSize="42dp"
+                app:cv_titleText="" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

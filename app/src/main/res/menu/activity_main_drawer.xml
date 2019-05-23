@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:title="@string/analyticsActivity">-->
+        <!--<menu>-->
+            <!--<group android:checkableBehavior="single">-->
+                <!--<item-->
+                    <!--android:id="@+id/powerAnalytics"-->
+                    <!--android:icon="@drawable/nav_power_analytics_icon"-->
+                    <!--android:title="@string/powerAnalytics" />-->
+                <!--<item-->
+                    <!--android:icon="@drawable/nav_bill_management_icon"-->
+                    <!--android:title="@string/billManagement" />-->
+            <!--</group>-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <item android:title="@string/Others">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_detector_control_drawer"
+                    android:visible="false"
+                    android:icon="@drawable/ic_detector_control"
+                    android:title="@string/Light" />
+
+                <item
+                    android:id="@+id/nav_add_remove_drawer"
+                    android:visible="false"
+                    android:icon="@drawable/ic_add_alert_black_24dp"
+                    android:title="@string/AC" />
+
+                <item
+                    android:id="@+id/power"
+                    android:icon="@drawable/ic_flash_on_black_24dp"
+                    android:title="Power Usage" />
+
+
+                <item
+                    android:id="@+id/water"
+                    android:icon="@drawable/ic_water"
+                    android:title="Water Usage" />
+
+                <item
+                    android:id="@+id/gas"
+                    android:icon="@drawable/ic_local_gas_station_black_24dp"
+                    android:title="Gas Usage" />
+                <item
+                    android:id="@+id/book"
+                    android:icon="@drawable/ic_apartment_black_24dp"
+                    android:title="@string/book" />
+                <item
+                    android:id="@+id/nav_approve_shared_list"
+                    android:visible="false"
+                    android:icon="@drawable/ic_request"
+                    android:title="@string/approve_share_list" />
+                <item
+                    android:id="@+id/shared_list"
+                    android:visible="false"
+                    android:icon="@drawable/ic_shared"
+                    android:title="@string/shared_list" />
+                <item
+                    android:id="@+id/arm_history"
+                    android:visible="false"
+                    android:icon="@drawable/ic_activate"
+                    android:title="@string/activate_deactivate_history" />
+
+                <item
+                    android:id="@+id/alarm_battery_status"
+                    android:visible="false"
+                    android:icon="@drawable/ic_battery"
+                    android:title="@string/alarm_battery_status" />
+                <item
+                    android:icon="@drawable/nav_terms_policies_icon"
+                    android:title="@string/Aprroved_Account"
+                    android:visible="false"
+                    android:id="@+id/alarm_approved_account"/>
+
+
+                <item
+                    android:id="@+id/alarm_history"
+                    android:visible="false"
+                    android:icon="@drawable/ic_history_black_24dp"
+                    android:title="Alarm History" />
+
+                <item
+                    android:id="@+id/sensor_add_remove_history"
+                    android:visible="false"
+                    android:icon="@drawable/ic_add_remove_history"
+                    android:title="Sensor Add Remove History" />
+
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:title="Log Out" />
+
+
+
+                <item
+                    android:id="@+id/deactviate_alarm"
+                    android:visible="false"
+                    android:icon="@drawable/ic_instruction"
+                    android:title="Deactivate Alarm" />
+
+
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="48dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoShadowHeight="4dp"
+    tools:context="com.datasoft_iot.tausif.sharedhomev1.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/flFront"
+        android:layout_width="match_parent"
+        android:background="@drawable/ic_gp_logo"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="1dp" />
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/tab_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_bg_four" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:id="@+id/text_view_arm_status"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"/>
+
+        <FrameLayout
+            android:id="@+id/layFront"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/home_icon"
+            android:visibility="gone">
+        </FrameLayout>
+
+        <com.datasoft_iot.tausif.sharedhomev1.TouchToUnLockView
+            android:id="@+id/tulv_UnlockView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+
+
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarBottom"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="1dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimary" />
+
+        <FrameLayout
+            android:id="@+id/slidingTopView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/bottomSliderUpAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center"
+                android:background="#000000"
+                android:alpha=".3"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:text="Quick Status"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm Type"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_alarm_type_actvitiy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                </android.support.v7.widget.RecyclerView>
+
+                <GridView
+                    android:id="@+id/gridApartmentStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:columnWidth="100dp"
+                    android:visibility="gone"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" />
+
+            </LinearLayout>
+
+            <!--<view
+                android:layout_width="match_parent"
+                android:layout_height="4dp"></view>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Shared Appliances"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<GridView-->
+                    <!--android:id="@+id/gridSharedAppliance"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:columnWidth="100dp"-->
+                    <!--android:numColumns="auto_fit"-->
+                    <!--android:stretchMode="columnWidth" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<view
+                android:layout_width="match_parent"
+                android:layout_height="4dp"></view>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Rest Rooms"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<GridView-->
+                    <!--android:id="@+id/gridSharedRooms"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:columnWidth="100dp"-->
+                    <!--android:numColumns="auto_fit"-->
+                    <!--android:stretchMode="columnWidth" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".activity.BatteryStatusActivity">
+
+    <include layout="@layout/main_activity_toolbar"
+             android:id="@+id/alarm_history"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:text="Battary Status History"
+           android:textColor="@color/white"
+           android:gravity="center"
+           android:textSize="20sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_battery_status_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="@dimen/dp10"
+        android:layout_weight="5">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

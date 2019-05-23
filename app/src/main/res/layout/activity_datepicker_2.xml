@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:weightSum="10"
+    tools:context=".activity.DatepickerActivity">
+
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_four" />
+
+    <include layout="@layout/main_activity_toolbar"
+        android:id="@+id/alarm_history"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <TextView
+            android:id="@+id/textView"
+            android:paddingTop="100dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:paddingLeft="10dp"
+            android:paddingBottom="@dimen/dp5"
+            android:text="Select your check-in and check-out date"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="9dp"
+        card_view:cardElevation="12dp"
+        card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_rent_from_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText
+                        android:id="@+id/checkIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:drawableRight="@drawable/calender_32"
+                        android:layout_alignParentTop="true"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:textColor="@color/black" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textViewFromDateShow_alarm"
+                    android:tag="@string/date_rent_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/layout_rent_from_"
+                    android:layout_alignRight="@+id/layout_rent_from_"
+                    style="@android:style/Widget.EditText"
+                    android:layout_alignTop="@+id/layout_rent_from_"
+                    android:hint="Check-in"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:padding="4dp"
+                    android:layout_alignBottom="@+id/layout_rent_from_" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_rent_to_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText
+                        android:id="@+id/checkOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/calender_32"
+                        android:layout_alignParentTop="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textViewToDateShow_alarm"
+                    android:tag="@string/date_rent_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@android:style/Widget.EditText"
+                    android:hint="Check-out"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:padding="4dp"
+                    android:layout_alignLeft="@+id/layout_rent_to_"
+                    android:layout_alignRight="@+id/layout_rent_to_"
+                    android:layout_alignTop="@+id/layout_rent_to_"
+                    android:layout_alignBottom="@+id/layout_rent_to_" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Search availability"
+            android:textColor="@color/white"
+            android:background="@color/red2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/linear_layout_list_alarm_histtory_title"
+                android:background="#00000000"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView_alarmName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Type"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewTime_alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewDate_alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Date"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</FrameLayout>

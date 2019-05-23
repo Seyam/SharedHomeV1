@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShowPendingSharedActvity">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_four" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.ShowPendingSharedActvity">
+
+        <include layout="@layout/main_activity_toolbar"
+                 android:id="@+id/alarm_history"/>
+
+        <TextView
+            android:id="@+id/heading_text"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="No User Available"/>
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recyclerview_alarm_shared_user_list_approval"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="0px">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp5"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Accept"
+                android:layout_margin="@dimen/dp5"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/btReject"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:text="Reject"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

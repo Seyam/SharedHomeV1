@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/context_menu"
+        android:icon="@drawable/top_menu_settings_icon"
+        android:orderInCategory="100"
+        android:title="Menu"
+        android:visible="true"
+        app:showAsAction="always" />
+</menu>

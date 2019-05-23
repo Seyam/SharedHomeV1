@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:weightSum="10"
+    tools:context=".activity.AlarmHistoryActivity">
+
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_four" />
+
+    <include layout="@layout/main_activity_toolbar"
+        android:id="@+id/alarm_history"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select date to see the Alarm History"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_rent_from_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText
+                        android:id="@+id/input_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:drawableRight="@drawable/calender_32"
+                        android:layout_alignParentTop="true"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:textColor="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textViewFromDateShow_alarm"
+                    android:tag="@string/date_rent_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/layout_rent_from_"
+                    android:layout_alignRight="@+id/layout_rent_from_"
+                    style="@android:style/Widget.EditText"
+                    android:layout_alignTop="@+id/layout_rent_from_"
+                    android:hint="From"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/white"
+                    android:padding="4dp"
+                    android:layout_alignBottom="@+id/layout_rent_from_" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_rent_to_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText
+                        android:id="@+id/input_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/calender_32"
+                        android:layout_alignParentTop="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textViewToDateShow_alarm"
+                    android:tag="@string/date_rent_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@android:style/Widget.EditText"
+                    android:hint="To"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/black"
+                    android:padding="4dp"
+                    android:layout_alignLeft="@+id/layout_rent_to_"
+                    android:layout_alignRight="@+id/layout_rent_to_"
+                    android:layout_alignTop="@+id/layout_rent_to_"
+                    android:layout_alignBottom="@+id/layout_rent_to_" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonShowAlarmHistory_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Show Alarm History" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewHistoryStatus_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:gravity="center"
+                android:textColor="#5bc0de"
+                android:padding="10dp"
+                android:textStyle="bold"
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:textSize="@dimen/tool_bar_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/linear_layout_list_alarm_histtory_title"
+                android:background="#00000000"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView_alarmName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Type"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewTime_alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewDate_alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Date"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_alarm_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

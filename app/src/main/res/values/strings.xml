@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Shared Home</string>
+
+    //Login
+
+    //Req
+    <string name="first_name">First Name*</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email*</string>
+    <string name="contact_no">Mobile No*</string>
+    <string name="password">Password*</string>
+    <string name="confirm_password">Confirm Password*</string>
+    <string name="date_rent_from">RentFromDate</string>
+    <string name="date_rent_to">RentToDate</string>
+    <string name="new_user">New User</string>
+    <string name="existing_user">Shared Account</string>
+    <string name="next">Next</string>
+    <string name="sign_in">Sign In</string>
+    <string name="smart_alarm_system">Smart Home System</string>
+
+
+    <string name="helpSettings">Help &amp; Settings</string>
+    <string name="Others">Options</string>
+
+    <string name="approve_share_list">Request List</string>
+
+    <string name="Aprroved_Account">Activated History</string>
+    <string name="logout">Logout</string>
+    <string name="book">Book Apartment</string>
+
+    <string name="slide_up_to_arm">Slide to Activate</string>
+    <string name="release_to_arm">Release to Deactivate</string>
+
+    <string name="slide_up_to_disarm">Slide to Disactivate</string>
+    <string name="release_to_disarm">Release to Disarm</string>
+
+
+    <string name="alarm_type">Alarm Type</string>
+    <string name="time">Time</string>
+    <string name="disarm">Disarm</string>
+    <string name="add_remove">Add/Remove Detector</string>
+    <string name="detector_control">Detector Control</string>
+    <string name="activate_deactivate_history">Activate/Deactivate History</string>
+    <string name="alarm_battery_status">Battery Status </string>
+    <string name="shared_list">Shared List</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="submit">Submit</string>
+    <string name="Light">Bed Light</string>
+    <string name="AC">AC</string>
+
+    <string name="permission_alert_dialog_title">Requesting SMS permission</string>
+    <string name="permission_dialog_message">The app will now request your permission to send and read SMS related services.</string>
+    <string name="action_ok">OK</string>
+
+
+    <string-array name="my_apartment_status_array">
+        <item>Air Cond. Off</item>
+        <item>Light Off</item>
+        <item>Socket Off</item>
+    </string-array>
+
+</resources>

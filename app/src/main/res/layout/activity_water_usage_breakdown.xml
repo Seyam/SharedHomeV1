@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:weightSum="10">
+
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_four" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_activity_toolbar"
+            android:id="@+id/waterBreakdownToolbar"/>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="9dp"
+            card_view:cardElevation="12dp"
+            card_view:cardUseCompatPadding="true">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:divider="?android:dividerHorizontal"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:showDividers="none">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="SHARED ROOM"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/reddish_orange"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <!--<View style="@style/Divider.Horizontal"/>-->
+
+                <TextView
+                    android:id="@+id/heading_total_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Hi,"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+
+
+
+                <View style="@style/Divider.Horizontal" />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="@dimen/dp10"
+                        android:text="Water usage breakdown"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/txt_date_water"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:gravity="left"
+                            android:text=""
+                            android:textSize="16dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/star_color"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:gravity="left"
+                            android:paddingLeft="10dp"
+                            android:text="Bath Tub"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:paddingRight="@dimen/dp10"
+                            android:id="@+id/bathtubUsage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:gravity="right"
+                            android:paddingLeft="10dp"
+                            android:text="Liter"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="@dimen/dp10"
+                            android:text="Kitchen Sink"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:paddingRight="@dimen/dp10"
+                            android:id="@+id/sinkUsage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:gravity="right"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="@dimen/dp10"
+                            android:text="Liter"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="@dimen/dp10"
+                            android:text="Shower"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:paddingRight="@dimen/dp10"
+                            android:id="@+id/showerUsage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:gravity="right"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="@dimen/dp10"
+                            android:text="Liter"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <View style="@style/Divider.Horizontal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10"
+                        android:text="Total"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:paddingRight="@dimen/dp10"
+                        android:id="@+id/totalWater"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="right"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10"
+                        android:text="Liter"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
